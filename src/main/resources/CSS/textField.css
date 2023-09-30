@@ -1,0 +1,13 @@
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 1 0; /* Sets bottom border width to 1 */
+    -fx-border-radius: 0; /* Optional, sets border radius to 0 */
+}
+
+.text-area {
+    -fx-background-color: transparent;
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 1 0; /* Sets bottom border width to 1 */
+    -fx-border-radius: 0; /* Optional, sets border radius to 0 */
+}

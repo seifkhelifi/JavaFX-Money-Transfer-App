@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="vb_contact" alignment="CENTER_LEFT" onMouseClicked="#writeNumberIntoFile" onMouseEntered="#changeColor" onMouseExited="#restoreColor" prefHeight="61.0" prefWidth="224.0" style="-fx-border-color: grey; -fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.transferapp.ContactController">
+   <children>
+      <ImageView fx:id="iv_logo" fitHeight="39.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Avatar-PNG-Image.png" />
+         </image>
+         <HBox.margin>
+            <Insets left="15.0" top="5.0" />
+         </HBox.margin>
+      </ImageView>
+      <VBox prefHeight="61.0" prefWidth="178.0">
+         <children>
+            <Label fx:id="tf_name" prefHeight="35.0" prefWidth="215.0" text="Seif khelifi">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="tf_number" prefHeight="35.0" prefWidth="215.0" text="29477481" textFill="#9e9898">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>

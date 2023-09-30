@@ -1,0 +1,26 @@
+/* Change the background color of the entire TabPane */
+.tab-pane {
+    -fx-background-color: #FFFFFF;
+}
+
+/* Change the background color of the TabPane header area */
+
+.tab-header-background {
+    -fx-background-color: white;
+}
+
+/* Change the background color of the selected tab */
+.tab:selected {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #f0f0f0;
+}
+
+/* Change the background color of the unselected tabs */
+.tab {
+    -fx-background-color: #f0f0f0;
+
+}
+
+.tab-pane {
+
+}

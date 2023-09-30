@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.transferapp.DepositController">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="595.0" prefWidth="227.0" style="-fx-background-color: #58a16c;">
+            <children>
+                <ImageView fitHeight="88.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/341485304_6189293671091128_953415018123472335_n.png" />
+                    </image>
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="40.0" />
+                    </VBox.margin>
+                </ImageView>
+                <Button fx:id="btn_dashboard" mnemonicParsing="false" onAction="#showDashBoard" onMouseEntered="#changeColorDashBoard" onMouseExited="#restoreColorDashBoard" prefHeight="48.0" prefWidth="259.0" style="-fx-background-color: #58a16c;" text="Dashboard" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btn_transactions" mnemonicParsing="false" onAction="#showTransactions" onMouseEntered="#changeColorTransaction" onMouseExited="#restoreColorTransaction" prefHeight="48.0" prefWidth="259.0" style="-fx-background-color: #58a16c;" text="Transactions" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btn_profile" mnemonicParsing="false" onAction="#openProfile" onMouseEntered="#changeColorProfile" onMouseExited="#restoreColorProfile" prefHeight="48.0" prefWidth="259.0" style="-fx-background-color: #58a16c;" text="Profile" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btn_deposit" mnemonicParsing="false" prefHeight="48.0" prefWidth="259.0" style="-fx-background-color: #6fc988;" text="Deposit" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            <Button fx:id="btn_chat" mnemonicParsing="false" onAction="#openChat" onMouseEntered="#changeColorChat" onMouseExited="#restoreColorChat" prefHeight="48.0" prefWidth="259.0" style="-fx-background-color: #58a16c;" text="Chat" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+                <Button fx:id="btn_logout" mnemonicParsing="false" onMouseEntered="#changeColorLogOut" onMouseExited="#restoreColorLogOut" prefHeight="48.0" prefWidth="259.0" style="-fx-background-color: #58a16c;" text="Logout" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <VBox prefHeight="620.0" prefWidth="752.0" style="-fx-background-color: white;">
+            <children>
+                <Label fx:id="lb_hello" prefHeight="50.0" prefWidth="721.0" text="Make Deposit">
+                    <font>
+                        <Font size="34.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label prefHeight="17.0" prefWidth="172.0" text="Move to Saving Account">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <HBox prefHeight="146.0" prefWidth="741.0" style="-fx-background-color: #f2f2f2;">
+                    <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="20.0" top="5.0" />
+                            </HBox.margin>
+                            <children>
+                                <ImageView fitHeight="140.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../images/Group%2035%20(1).png" />
+                                    </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                                </ImageView>
+                                <Label prefHeight="21.0" prefWidth="133.0" text="Checking Account :" textFill="#c6bfbf">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets bottom="90.0" right="60.0" />
+                                    </StackPane.margin>
+                                </Label>
+                                <Label fx:id="lb_cka_number" prefHeight="17.0" prefWidth="172.0" text="0000 0000 0000 0000" textFill="WHITE">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets bottom="40.0" right="20.0" />
+                                    </StackPane.margin>
+                                </Label>
+                                <Label prefHeight="21.0" prefWidth="133.0" text="Balance :" textFill="#c6bfbf">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets right="60.0" top="50.0" />
+                                    </StackPane.margin>
+                                </Label>
+                                <Label fx:id="lb_balance_ck" prefHeight="17.0" prefWidth="172.0" text="580 DT" textFill="WHITE">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets right="20.0" top="90.0" />
+                                    </StackPane.margin>
+                                </Label>
+                                <Label prefHeight="21.0" prefWidth="32.0" text="Visa" textFill="WHITE">
+                                    <font>
+                                        <Font name="Pristina" size="19.0" />
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets left="170.0" top="90.0" />
+                                    </StackPane.margin>
+                                </Label>
+                            </children>
+                        </StackPane>
+                  <VBox alignment="CENTER" prefHeight="160.0" prefWidth="222.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <TextField fx:id="tf_ck_to_sv" prefHeight="25.0" prefWidth="162.0" promptText="Amount" stylesheets="@../../../CSS/textField.css">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="50.0" right="50.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button fx:id="btn_dashboard1" mnemonicParsing="false" onAction="#transferToSaving" onMouseEntered="#changeColorDashBoard" prefHeight="34.0" prefWidth="182.0" style="-fx-background-color: #58a16c;" text="Transfer" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" right="50.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Label fx:id="lb_waning_1" prefHeight="19.0" prefWidth="118.0" textFill="#f26e57">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                            <children>
+                                <ImageView fitHeight="140.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../images/Group%2035%20(2).png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="21.0" prefWidth="133.0" text="Saving Account :" textFill="#c6bfbf">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets bottom="90.0" right="60.0" />
+                                    </StackPane.margin>
+                                </Label>
+                                <Label fx:id="lb_sva_number" prefHeight="17.0" prefWidth="172.0" text="0000 0000 0000 0000" textFill="WHITE">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets bottom="40.0" right="20.0" />
+                                    </StackPane.margin>
+                                </Label>
+                                <Label prefHeight="21.0" prefWidth="133.0" text="Balance :" textFill="#c6bfbf">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets right="60.0" top="50.0" />
+                                    </StackPane.margin>
+                                </Label>
+                                <Label fx:id="lb_balance_sv" prefHeight="17.0" prefWidth="172.0" text="580 DT" textFill="WHITE">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets right="20.0" top="90.0" />
+                                    </StackPane.margin>
+                                </Label>
+                                <Label prefHeight="21.0" prefWidth="32.0" text="Visa" textFill="WHITE">
+                                    <font>
+                                        <Font name="Pristina" size="19.0" />
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets left="170.0" top="90.0" />
+                                    </StackPane.margin>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                        </StackPane>
+                    </children>
+            </HBox>
+            <Label prefHeight="17.0" prefWidth="172.0" text="Move from Saving Account">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #f2f2f2;">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="140.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/Group%2035%20(2).png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="133.0" text="Saving Account :" textFill="#c6bfbf">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets bottom="90.0" right="60.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="lb_sva_number1" prefHeight="17.0" prefWidth="172.0" text="0000 0000 0000 0000" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets bottom="40.0" right="20.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="133.0" text="Balance :" textFill="#c6bfbf">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets right="60.0" top="50.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="lb_balance_sv1" prefHeight="17.0" prefWidth="172.0" text="580 DT" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets right="20.0" top="90.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="32.0" text="Visa" textFill="WHITE">
+                           <font>
+                              <Font name="Pristina" size="19.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets left="170.0" top="90.0" />
+                           </StackPane.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </StackPane>
+                  <VBox alignment="CENTER" prefHeight="160.0" prefWidth="222.0">
+                     <children>
+                        <TextField fx:id="tf_sv_to_ck" prefHeight="25.0" prefWidth="162.0" promptText="Amount" stylesheets="@../../../CSS/textField.css">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="50.0" right="50.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button fx:id="btn_dashboard2" mnemonicParsing="false" onAction="#transferToChecking" onMouseEntered="#changeColorDashBoard" prefHeight="34.0" prefWidth="182.0" style="-fx-background-color: #58a16c;" text="Transfer" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" right="50.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Label fx:id="lb_warning_2" prefHeight="19.0" prefWidth="118.0" textFill="#f26e57">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="140.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/Group%2035%20(1).png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="133.0" text="Checking Account :" textFill="#c6bfbf">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets bottom="90.0" right="60.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="lb_cka_number1" prefHeight="17.0" prefWidth="172.0" text="0000 0000 0000 0000" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets bottom="40.0" right="20.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="133.0" text="Balance :" textFill="#c6bfbf">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets right="60.0" top="50.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="lb_balance_ck1" prefHeight="17.0" prefWidth="172.0" text="580 DT" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets right="20.0" top="90.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="32.0" text="Visa" textFill="WHITE">
+                           <font>
+                              <Font name="Pristina" size="19.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets left="170.0" top="90.0" />
+                           </StackPane.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </StackPane>
+               </children>
+            </HBox>
+            <Label prefHeight="17.0" prefWidth="172.0" text="Deposit from Bank Card">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="147.0" prefWidth="741.0" style="-fx-background-color: #f2f2f2;">
+               <children>
+                  <VBox prefHeight="133.0" prefWidth="359.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Account Number :">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="tf_acc_number" prefHeight="25.0" prefWidth="212.0" stylesheets="@../../../CSS/textField.css">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="97.0" text="Amount :    ">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="tf_amount" alignment="CENTER" prefHeight="25.0" prefWidth="212.0" stylesheets="@../../../CSS/textField.css">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <Button fx:id="btn_dashboard3" mnemonicParsing="false" onAction="#depositFromBank" onMouseEntered="#changeColorDashBoard" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #58a16c;" text="Transfer " textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="138.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            </children>
+        </VBox>
+    </children>
+</HBox>
